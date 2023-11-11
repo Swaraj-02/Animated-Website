@@ -1,0 +1,44 @@
+/* ---------------------- Border ------------------ */
+
+//--- border ---->
+@mixin Border($val){
+    -webkit-border: $val;
+    border: $val;
+}
+
+//--- border-radius --->
+@mixin borderRadius($val){
+    -webkit-border-radius: $val;
+    border-radius: $val;
+}
+
+/* ------------------------------------------------ */
+
+/* ---------------------- Margin ------------------ */
+
+//--- margin-bottom --->
+@mixin marginBottom($val){
+    margin-bottom: $val;
+}
+
+/* ------------------------------------------------ */
+
+
+/* ---------------------- Flex ------------------ */
+
+@mixin flexbox {
+    display: flex;
+  }
+
+@mixin flexJustify($val){
+    display: flex;
+    justify-content: $val;
+}
+
+@mixin flexAlign-All($val){
+    display: flex;
+    justify-content: $val;
+    align-items: $val;
+}
+
+/* ------------------------------------------------ */

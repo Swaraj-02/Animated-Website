@@ -1,0 +1,29 @@
+.slide-box{
+    @include flexJustify(space-between);
+    align-items: center;
+    font-family: $secondary-font;
+    margin-inline: 3rem;
+    margin-bottom: 3rem;
+
+    h2{
+        font: {
+            size: 6rem;
+            weight: $teritary-weight;
+        }
+    }
+
+    .slide-btn{
+        display: inline-flex;
+    }
+
+    .slide-btn-1{
+        background-color: aquamarine;
+    }
+    .slide-btn-2{
+        background-color: royalblue;
+    }
+
+    i{
+        font-size: 4rem;
+    }
+}

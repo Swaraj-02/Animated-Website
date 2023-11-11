@@ -1,0 +1,266 @@
+.nav-bar{
+    background-color: $bgcolor-1;
+    position: relative;
+    top: 0;
+    z-index: 1;
+   }
+nav{
+    @include flexJustify(space-between);
+    align-items: center;
+    // padding: 1.2rem 0;
+    
+    .logo{
+
+        font: {
+            size: 3.5rem;
+            family: math;
+            weight: $primary-weight;
+        }
+        i{
+            color: green;
+        }
+        .logo-text{
+            color: $secondary-color;
+        }
+    }
+
+    .nav-ul{
+        @include flexbox;
+// display: none; //remove
+            .nav-link{
+                color: $color2;
+            }
+
+            .nav-link:hover{
+                color: $color7;
+            }
+             
+            .nav-li{
+                margin-left: 2rem;
+                padding: 2.5rem 1rem;
+
+                font: {
+                    size: 1.8rem;
+                    family: $primary-font;
+                    weight: $secondary-weight;
+                }
+            }
+
+    }    
+}
+
+// --- Left Menu Section --- 
+.left-group{
+    @include flexbox;
+    align-items: center;
+
+    span{
+        color: $color1;
+    }
+}
+
+// --- Right Menu Section --- 
+.right-group{
+     a{
+        color: $color1;
+     }
+}
+
+
+/* --- Drop Down Menu --- */
+
+nav{
+    .nav-ul{
+        .left-item{
+            .dropdown-group{
+                position: absolute;
+                // top: 52px;
+                z-index: 1;
+                box-shadow: $boxShadow-1;
+                background-color: $bgcolor-1;
+                border: 1px solid $color6;
+                @include borderRadius(8px);
+                color: $color1 !important;
+                padding: 1rem 2rem;
+                visibility: hidden;
+                transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s, transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+
+                .dropdown-list{
+                    line-height: 2;
+                    font-size: 1.7rem;
+                    cursor: pointer;
+
+                    a{
+                        color: $color1;                        
+                    }
+
+                    :hover{
+                        color: $color4;
+                    }
+
+                }
+            }
+
+        }      
+
+    }
+
+}
+
+nav{
+    .nav-ul{
+        .left-item:hover{
+            .dropdown-group{
+             visibility: visible; 
+             transform: translateY(1.2rem);        
+            }
+        }
+
+        .dropdown-list:hover{
+            color: $color4;
+        }
+    }
+}
+
+
+
+/* --- Toggle Menu --- */
+.toggle{
+display: none; //add 
+
+
+}
+
+.toggle-menu{
+    
+    display: flex;
+    // margin: 2rem;  //remove
+
+
+    .toggle-bar{
+        
+        i{
+            font-size: 3rem;
+            color: $color1;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+    }
+
+
+}
+
+.toggle-bg{
+    padding: 1rem 2rem;
+    width: 100%;
+    z-index: 1;
+    max-width: 300px;
+    height: 100vh;
+    background-color: $bgcolor-1;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    visibility: hidden;
+    text-align: center;
+    font-family: $secondary-font;
+    
+}
+
+
+.toggle-group{
+    @include flexbox;
+    flex-direction: column;
+    margin-bottom: 2.5rem; 
+    
+    .toggle-item{
+        @include flexJustify(space-between);        
+        color: $secondary-color;
+        
+               
+        .toggle-link{
+            font-size: 1.7rem;
+            font-weight: $secondary-weight;
+        }
+
+        i{
+            color: $secondary-color;
+            font-size: 2.2rem;
+        }
+        
+    }
+
+   
+}
+
+.toggle-btn-group{
+    margin-bottom: 4rem;
+    font-size: 1.7rem;
+    
+    .toggle-btn-item{
+        padding: 1rem;
+        @include Border(1px solid $secondary-color);
+         a{
+            color: $secondary-color;
+        }
+  
+    } 
+    :nth-child(1){
+        margin-bottom: 1rem;
+    } 
+
+}
+
+
+/* ------------------- */
+
+/* ---- Dropdown For Toggle Menu ----- */
+.toggle-group{
+
+    .toggle-dropdown-group{
+        text-align: left;
+        // display: none;
+
+        .toggle-dropdown-item{
+            font-size: 1.3rem;
+            line-height: 2;
+
+            a{
+                color: $color7;   
+            }
+            :hover{
+                color: $color4;
+            }
+           
+        }
+        
+    }
+}
+
+
+/* ------------------- */
+
+// .toggle-list{
+//     .toggle-dropdown-group{
+//         display: none;
+//     }
+
+//     i{
+//         transition: 0.4s;
+//     }
+// }
+
+// .toggle-list{
+
+//     .active{
+
+//         .toggle-dropdown-group{
+//             display: flex;
+//         }
+
+//         i{
+//             transform: rotate(-180deg);
+//         }
+//     }
+    
+// }

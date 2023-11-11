@@ -1,0 +1,119 @@
+// footer{
+//     background-color: lightpink;
+// }
+
+.footer-container{
+    @include flexJustify(space-between);
+    flex-wrap: wrap;
+    column-gap: 5.5rem;
+
+    
+    .footer-item{
+        margin-bottom: 4rem;
+        padding-left: 3rem;
+        flex-grow: 0;
+
+        h5{
+            color: $color7;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+
+            font: {
+                size: 1.3rem;
+                family: $teritary-font;
+            }
+        }
+
+        .footer-ul{
+            font-size: 1.6rem;
+            font-family: $secondary-font;            
+            font-weight: 600;
+
+            .footer-li{
+                padding: 0 0 1rem 0;
+
+                a{
+                    color: $color2;
+
+                }
+
+                :hover{
+                    color: $color4;
+                }
+                
+            }
+        }
+    }
+
+}
+
+//Last Child of footer Item
+
+.footer-item:nth-last-child(1){
+    flex-grow: 1;
+
+    .social-icon-group{
+        display: flex !important;
+        justify-content: flex-start;
+        
+        .social-icon-item{
+            
+            margin-right: 4rem;
+        }
+    }
+}
+
+/* ------ Terms And Conditions of Footer  ------ */
+.footer-bottom{
+    @include flexJustify(space-between);
+    align-items: center;
+    font-family: $secondary-font;
+
+    .logo{
+
+        font: {
+            size: 3.5rem;
+            family: math;
+            weight: $primary-weight;
+        }
+        i{
+            color: green;
+        }
+        .logo-text{
+            color: $secondary-color;
+        }
+    }
+
+    .footer-bottom-text{
+        font-size: 1.3rem;
+        color: $color7;
+    }
+
+
+    .footer-bottom-policy{
+
+        .footer-details{
+            @include flexbox;
+            // gap: 2rem;
+                                   
+            .footer-details-item{
+                font-size: 1.3rem;
+                padding: 0 1rem;
+                border-right: 1px solid $secondary-color;
+
+                a{
+                    color: $color7;
+                }
+                
+            }
+
+            .footer-details-item:nth-last-child(1){
+                border: none;
+            }
+        }
+    }
+
+}
+
+
+/* ------ */

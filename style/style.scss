@@ -1,0 +1,46 @@
+/*----------- Global Scss -----------*/
+
+/* -- Commonly Use -- */
+@import "sass/global/common";
+
+/* -- Variables -- */
+@import "sass/global/variables";
+
+/* -- Mixins -- */
+@import "sass/global/mixin";
+
+/* ---------------------------------*/
+
+
+/*----------- Utility Scss -----------*/
+
+/* -- Buttons -- */
+@import "sass/utility/button";
+
+/* -- Links -- */
+@import "sass/utility/link";
+
+/* -- Slide Button -- */
+@import "sass/utility/slide";
+
+/* ---------------------------------*/
+
+
+/*----------- Section Scss -----------*/
+
+/* -- Nav-Bar -- */ 
+@import "sass/section/navbar";
+
+/* -- Cards -- */ 
+@import "sass/section/cards";
+
+/* -- Footer -- */ 
+@import "sass/section/footer";
+
+
+
+
+/* -- Media-Queries -- */ 
+@import "sass/section/mediaqueries";
+
+/* --------------------------------- */

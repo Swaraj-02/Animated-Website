@@ -1,0 +1,51 @@
+/* ----- All Type Of Buttons ---- */
+
+// ----- Primary Button ---- 
+.primary-btn{
+    padding: 12px 30px;
+    @include borderRadius(30px);
+    transition: 0.5s;
+
+    font: {
+        size: 1.8rem;
+        family: $primary-font;
+        weight: $secondary-weight;
+    }
+}
+
+.primary-btn-1{
+    color: $secondary-color;
+    @include Border(1px solid $secondary-color);
+}
+
+.primary-btn-1:hover{
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.primary-btn-2{
+    background-color: $bgcolor-2;
+    color: white !important;
+    
+}
+
+.primary-btn-2:hover{
+    background-color: $color7;
+}
+
+/* ----- Social Icon Group ----- */
+.social-icon-group{
+    @include flexJustify(space-between);
+
+    .social-icon-item{
+        font-size: 2.5rem;
+
+
+        i{
+            color: $secondary-color;
+        }
+    }
+}
+
+
+/* ------------------------------ */

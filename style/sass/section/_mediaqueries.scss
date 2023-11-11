@@ -1,0 +1,139 @@
+/* --- Responsive For 1200px (small Laptop) --- */
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+
+    nav{
+        .nav-ul{
+            .nav-li{
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    
+}
+/* ------------------------------------- */
+
+
+/* --- Responsive For 1022px (Tablet) --- */
+@media screen and (max-width: 1022px) {
+    nav{
+        padding: 1.5rem;
+        .nav-ul{
+            display: none;
+        }
+
+        .logo{
+            .logo-text{
+               display: none;
+            }
+        }
+    }
+
+    nav{
+
+        .toggle{
+            display: block; //add 
+            }
+
+        .toggle-menu{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            
+        }    
+    }
+
+    //---- For Footer ----
+    .footer-bottom{
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 1.5rem;
+
+    }    
+}
+/* ------------------------------------- */
+
+
+/* --- Responsive For 767px (Tablet) --- */
+
+@media screen and (max-width: 767px) {
+
+    .toggle-bg{
+        max-width: 100%;
+    }
+
+    .toggle-btn-group{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+
+    //---- For Footer ----
+    .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+ 
+     }
+}
+
+
+/* ------------------------------------- */
+
+
+/* --- Responsive For 560px(Mobile) --- */
+@media screen and (max-width: 575px) {
+
+    //---- For Footer ----
+.footer-bottom{
+    
+    .footer-bottom-text{
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom-policy{
+        
+            .footer-details{
+                .footer-details-item{
+                    font-size: 1.1rem;
+                }
+            }
+        }    
+
+    }
+
+} 
+
+/*- ---------------------- -*/
+
+/* --- Responsive For 480px(Mobile) --- */
+@media screen and (max-width: 575px) {
+
+    //---- For Footer ----
+.footer-bottom{
+    
+    .footer-bottom-text{
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom-policy{
+        
+            .footer-details{
+                flex-direction: column;
+                row-gap: 1rem;
+                align-items: center;
+                
+                .footer-details-item{
+                    border: none;
+                }
+            }
+        }    
+
+    }
+
+}
